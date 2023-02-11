@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Intro component with sign up form</title>
+
+  <!-- Learn to code by watching others
+
+  See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. 
+
+  Try it free 7 days then $20/mo. thereafter
+
+  First Name 
+  Last Name 
+  Email Address
+  Password
+
+ 
+
+  By clicking the button, you are agreeing to our Terms and Services -->
+  <style>
+ 
+ body{
+ background-image: url(./images/bg-intro-desktop.png);
+ background-size: cover;
+ background-color:  hsl(0, 100%, 74%) ;
+ background-blend-mode: multiply;
+ opacity: 0.8;
+ margin: 0px;
+ font-family: 'Poppins', sans-serif;
+   }
+
+   .box{
+    background: hsla(0, 0%, 100%, 0); 
+    height: 350px;
+    margin-top: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    
+    color: white;
+    max-width: 400px;
+    }
+
+    .box_2{
+  
+    background: white;
+    width: 450px;
+    height: 420px;
+    margin-top: 50px;
+    box-shadow: -2px 9px 5px -3px rgba(117, 117, 117, 0.411);  
+    border-radius: 10px;
+    margin-top: 30px;
+    
+    
+    }
+
+    .container{
+    display: flex;
+    min-height:100vh;
+    justify-content: center;
+    align-items: center;
+    
+   }
+
+   .container_2{
+    display: flex;
+    min-height:100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+   }
+
+   .header{
+    background: hsl(248, 32%, 49%);
+    width: 450px;
+    height: 50px;
+    margin-top: 50px;
+    box-shadow: -2px 9px 5px -3px rgba(117, 117, 117, 0.411); 
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    
+    }
+
+    h1{
+      margin-top: 100px;
+      line-height: 40px;
+    }
+
+    p{
+      font-size: 12px;
+      
+      
+    }
+
+    .form{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+    .header p {
+       color: white;
+       font-size: 15px;
+      
+    }
+
+    .firstinput{
+      padding: 15px;
+      margin-left: 27px;
+      margin-right: 27px;
+      margin-bottom: 20px;
+      margin-top: 35px;
+      border: solid 2px rgba(206, 206, 206, 0.308);
+      border-radius: 5px;
+      color: hsl(246, 25%, 77%);
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .input{
+      padding: 15px;
+      margin-left: 27px;
+      margin-right: 27px;
+      margin-bottom: 20px;
+      border: solid 2px rgba(206, 206, 206, 0.308);
+      border-radius: 5px;
+      color: hsl(246, 25%, 77%);
+      font-family: 'Poppins', sans-serif;
+    }
+
+ 
+
+    .btn{
+     background-color:  hsl(154, 59%, 51%) ; 
+      border: none;
+     text-transform:uppercase;
+     font-weight: bold;
+     color: white;
+     margin-left: 27px;
+      margin-right: 27px;
+    padding: 12px;
+    border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+
+    }
+
+    .footer{
+      text-align: center;
+      color: rgb(153, 153, 153);
+      font-size: 12PX;
+      
+    }
+
+    span{
+      color:  hsl(0, 100%, 74%) ;
+      font-weight: bold;
+      
+    }
+
+    .firstinput:focus{
+       outline: none;
+       border: 1px solid hsl(248, 32%, 49%);
+    }
+
+    .input:focus {
+      outline: none;
+       border: 1px solid hsl(248, 32%, 49%);
+    }
+
+    .btn:hover{
+      cursor: pointer;
+      background-color:  hsl(154, 100%, 65%) ;
+      border: none ;
+    }
+
+ 
+    @media screen and (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+      P{
+        font-size: 18PX;
+      }
+
+    }
+
+    @media screen and (max-width: 425px) {
+      .box_2{
+
+        width: 300PX;
+
+      }
+
+      .header{
+
+        width: 300PX;
+        height: 80PX;
+
+      }
+
+      .box{
+        margin-top: 0;
+        width: 300PX;
+      }
+
+       
+      P{
+        font-size: 15PX;
+      }
+
+    }
+    
+   
+  </style>
+</head>
+<body>
+  <main class="container">
+       <div class="box">
+        <h1>
+          Learn to code by watching others
+        </h1>
+
+        <p>
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+  but understanding how developers think is invaluable. 
+        </p>
+
+        </div>
+     
+       <section class="container_2">
+        <div class="header">
+          <p> <strong> Try it free 7 days </strong>  then $20/mo. thereafter
+          </p>
+        </div>
+        <div class="box_2">
+          <form action=" " class="form"  id="form">
+             <input type="text" class="firstinput " id="firstName" placeholder="first Name">
+             <input type="text" class="input" id="lastName" placeholder="last Name" >
+             <input type="email" name="" id="email" class="input" placeholder="email">
+             <input type="password" class="input" id="password" placeholder="password">
+             <input type="submit" class="btn" value="Claim your free trial">  </input>
+
+             
+            </form>
+            <p class="footer"> By clicking the button, you are agreeing to our <span> Terms and Services </span>  </p>
+        </div>
+        </section>
+
+    </main>
+  
+
+
+<script>
+ 
+
+
+</script>
+</body>
+</html>
